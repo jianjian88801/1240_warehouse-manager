@@ -37,7 +37,6 @@ public class LoginController {
 
     @RequestMapping("login")
     public ResultObj login(UserVo userVo,String code,HttpSession session){
-
         //获得存储在session中的验证码
         String sessionCode = (String) session.getAttribute("code");
         if (code!=null&&sessionCode.equals(code)){
@@ -67,7 +66,6 @@ public class LoginController {
         }
 
     }
-
     /**
      * 得到登陆验证码
      * @param response

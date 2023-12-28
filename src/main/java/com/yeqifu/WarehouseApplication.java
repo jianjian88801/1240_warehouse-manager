@@ -18,6 +18,7 @@ import javax.servlet.MultipartConfigElement;
 @MapperScan(basePackages = {"com.yeqifu.*.mapper"})
 public class WarehouseApplication {
 
+
 	public static void main(String[] args) {
 		SpringApplication.run(WarehouseApplication.class, args);
 	}
